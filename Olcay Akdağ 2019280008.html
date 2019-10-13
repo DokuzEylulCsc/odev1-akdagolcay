@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+	<body>
+		<h2>Olcay Akdağ 201928008</h2>
+		<form>
+			<label for="s1">Sayı 1</label>
+			<input type='text' id='s1' value="0"></input>
+			<br>
+				<label for="s2">Sayı 2</label>
+				<input type='text' id='s2' value="0"></input>
+				<br>
+					<br>
+						<input type="button" value="Topla" id="hesap" >
+						</form>
+						<div id="sonuc"></div>
+						<script>
+      
+     document.getElementById("hesap").onclick=function()
+            {
+              var sayi1=document.getElementById("s1").value;
+        var sayi2=document.getElementById("s2").value;  
+         if (sayi1 == null || sayi1 == "", sayi2 == null || sayi2 == ""){
+           alert("Lütfen boşluk bırakmayınız.");
+      return false;
+    }
+                var toplam= (Number(sayi1)*100 + Number(sayi2)*100)/100;
+               if(isNaN(toplam)){
+                   window.alert("Lütfen sayı giriniz.");
+               }else{
+                   window.alert("Toplam: "+toplam);
+               }
+                          }
+            
+</script>
+						<br>
+							<br>
+								<label for="d1">Değer 1</label>
+								<input type='text' id='d1' />
+								<br>
+									<label for="d2">Değer 2</label>
+									<input type='text' id='d2' />
+									<br>
+										<br>
+											<input type="button" value="Birleştir" id="birlestir" >
+												<div id="birlesik"></div>
+												<script>
+ 
+ document.getElementById("birlestir").onclick=function()
+ {
+              var deger1=document.getElementById("d1").value;
+             var deger2=document.getElementById("d2").value;
+            var birlesim= String(deger1) + String(deger2);
+          if (deger1 == null || deger1 == "", deger2 == null || deger2 == ""){
+           alert("Birleştirilecek bir şey yok.");
+      return false;
+    }
+           {     
+              alert(birlesim) };
+                    } 
+  
+     
+</script>
+											</body>
+										</html>
